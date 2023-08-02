@@ -154,14 +154,14 @@ const App = () => {
 			<label htmlFor='file'>File</label>
 			<input
 				type='file'
-				// Si quiero que el valor del input sea personalizado
-				// Basta con usar un onChange y setear el nombre del campo con el valor del input implementado el setValue de react hook form
+				//? Si quiero que el valor del input sea personalizado basta con usar un onChange y setear el nombre del campo con el valor del input implementado el setValue de react hook form
 				onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
 					console.log(e.target.files[0])
 
 					setValue('profileImg', e.target.files[0].name)
 				}}
-				// Si no dejo el valor que me da react hook form por defecto
+
+				//? Si no dejo el valor que me da react hook form por defecto
 
 				// {...register('file', {
 				// 	required: {
